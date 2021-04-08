@@ -16,7 +16,10 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="3" Background="White" Content="CLIENT" Foreground="Black" FontSize="50" FontWeight="ExtraBold" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
         <!--#endregion-->
-        <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33"></StackPanel>
+        <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33" CanVerticallyScroll="True" Name="stackpanel">
+            <Label Content="" Foreground="White" FontSize="30" Name="receiveMessage"/>
+            <Label Content="" Foreground="White" FontSize="30" Name="sentMessage"/>
+        </StackPanel>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -24,8 +27,20 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox Grid.Column="0" Foreground="White" Background="#41444b"></TextBox>
-            <Button Grid.Column="1"></Button>
+            <TextBox Grid.Column="0" Foreground="White" Background="#41444b" x:Name="sendMessage"></TextBox>
+            <Button Grid.Column="1" Content="Send" FontSize="28" Name="send"></Button>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" Foreground="White" Background="#41444b" Margin="10, 10, 5, 10" Text="IP" FontSize="35" ToolTip="IP" Name="ip"></TextBox>
+            <TextBox Grid.Column="1" Foreground="White" Background="#41444b" Margin="5, 10, 5, 10" Text="Port" FontSize="35" Name="port"></TextBox>
+            <Button Grid.Column="2" Margin="5, 10, 10, 10" Content="Connect" FontSize="35" Name="connect" Click="Connection"></Button>
         </Grid>
     </Grid>
 </Window>

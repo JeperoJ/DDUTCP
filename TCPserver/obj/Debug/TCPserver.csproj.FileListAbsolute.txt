@@ -13,3 +13,17 @@ D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPserver\obj\Debug
 D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPserver\obj\Debug\TCPserver.csproj.CoreCompileInputs.cache
 D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPserver\obj\Debug\TCPserver.exe
 D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPserver\obj\Debug\TCPserver.pdb
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\bin\Debug\TCPserver.exe.config
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\bin\Debug\TCPserver.exe
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\bin\Debug\TCPserver.pdb
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver.csprojAssemblyReference.cache
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\MainWindow.g.cs
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\App.g.cs
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver_MarkupCompile.cache
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver_MarkupCompile.lref
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\MainWindow.baml
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver.g.resources
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver.Properties.Resources.resources
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver.csproj.GenerateResource.cache
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver.exe
+C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPserver\obj\Debug\TCPserver.pdb
