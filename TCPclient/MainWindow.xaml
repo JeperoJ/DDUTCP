@@ -28,7 +28,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBox Grid.Column="0" Foreground="White" Background="#41444b" x:Name="sendMessage"></TextBox>
-            <Button Grid.Column="1" Content="Send" FontSize="28" Name="send"></Button>
+            <Button Grid.Column="1" Content="Send" FontSize="28" Name="send" Click="Send"></Button>
         </Grid>
 
         <Grid Grid.Row="2">

@@ -12,9 +12,3 @@ C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.Properti
 C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.csproj.GenerateResource.cache
 C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.exe
 C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.pdb
-C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
-C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\bin\Debug\System.ValueTuple.dll
-C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.pdb
-C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.xml
-C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\bin\Debug\System.ValueTuple.xml
-C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.csproj.CopyComplete
