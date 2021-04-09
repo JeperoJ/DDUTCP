@@ -17,8 +17,8 @@
         <Label Grid.Row="3" Background="White" Content="CLIENT" Foreground="Black" FontSize="50" FontWeight="ExtraBold" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
         <!--#endregion-->
         <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33" CanVerticallyScroll="True" Name="stackpanel">
-            <Label Content="" Foreground="White" FontSize="30" Name="receiveMessage"/>
-            <Label Content="" Foreground="White" FontSize="30" Name="sentMessage"/>
+            <Label Foreground="White" FontSize="15" Name="receiveMessage" Margin="10,5,300,5" Background="#41444b" Visibility="Collapsed"/>
+            <Label Foreground="White" FontSize="15" Name="sentMessage" Margin="300,5,10,5" Background="#41444b" Visibility="Collapsed"/>
         </StackPanel>
 
         <Grid Grid.Row="1">
@@ -27,8 +27,8 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox Grid.Column="0" Foreground="White" Background="#41444b" x:Name="sendMessage"></TextBox>
-            <Button Grid.Column="1" Content="Send" FontSize="28" Name="send" Click="Send"></Button>
+            <TextBox Grid.Column="0" Foreground="White" Background="#41444b" x:Name="sendMessage" FontSize="23"></TextBox>
+            <Button Grid.Column="1" Content="Send" FontSize="25" Name="send" Click="Send"></Button>
         </Grid>
 
         <Grid Grid.Row="2">

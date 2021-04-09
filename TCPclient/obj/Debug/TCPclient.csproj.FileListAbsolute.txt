@@ -12,3 +12,18 @@ C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.Properti
 C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.csproj.GenerateResource.cache
 C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.exe
 C:\Users\jeppe\Desktop\DDU Projekt\TCPwUI\TCPclient\obj\Debug\TCPclient.pdb
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\bin\Debug\TCPclient.exe.config
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\bin\Debug\TCPclient.exe
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\bin\Debug\TCPclient.pdb
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.csprojAssemblyReference.cache
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\MainWindow.g.cs
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\App.g.cs
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient_MarkupCompile.cache
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient_MarkupCompile.lref
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\MainWindow.baml
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.g.resources
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.Properties.Resources.resources
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.csproj.GenerateResource.cache
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.csproj.CoreCompileInputs.cache
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.exe
+D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.pdb
