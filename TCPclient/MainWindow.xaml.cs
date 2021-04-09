@@ -26,6 +26,8 @@ namespace TCPclient
         public MainWindow()
         {
             InitializeComponent();
+
+            
             
 
             /*try
@@ -102,7 +104,7 @@ namespace TCPclient
             // Send the message to the connected TcpServer.
             stream.Write(data, 0, data.Length); //Sender beskeden
 
-            stackpanel.Children.Add(new Label { Foreground = sentMessage.Foreground, FontSize = sentMessage.FontSize, Margin = sentMessage.Margin, Background = sentMessage.Background, Content = sendMessage.Text });
+            stackpanel.Children.Add(new TextBlock { Foreground = sentMessage.Foreground, FontSize = sentMessage.FontSize, Margin = sentMessage.Margin, Background = sentMessage.Background, Text = sendMessage.Text });
             sendMessage.Text = "";
 
             //mre.Set(); //Starter receive threaden igen
@@ -124,7 +126,7 @@ namespace TCPclient
                 // Read the first batch of the TcpServer response bytes.
                 int bytes = stream.Read(data, 0, data.Length);
                 responseData = Encoding.UTF8.GetString(data, 0, bytes);
-                Dispatcher.Invoke(new Action(() => { stackpanel.Children.Add(new Label { Foreground = receiveMessage.Foreground, FontSize = receiveMessage.FontSize, Margin = receiveMessage.Margin, Background = receiveMessage.Background, Content = responseData }); }));
+                Dispatcher.Invoke(new Action(() => { stackpanel.Children.Add(new TextBlock { Foreground = receiveMessage.Foreground, FontSize = receiveMessage.FontSize, Margin = receiveMessage.Margin, Background = receiveMessage.Background, TextWrapping = receiveMessage.TextWrapping, Text = responseData }); }));
                 //mre.WaitOne();
             }
             

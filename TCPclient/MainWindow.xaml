@@ -16,10 +16,12 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="3" Background="White" Content="CLIENT" Foreground="Black" FontSize="50" FontWeight="ExtraBold" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
         <!--#endregion-->
-        <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33" CanVerticallyScroll="True" Name="stackpanel">
-            <Label Foreground="White" FontSize="15" Name="receiveMessage" Margin="10,5,300,5" Background="#41444b" Visibility="Collapsed"/>
-            <Label Foreground="White" FontSize="15" Name="sentMessage" Margin="300,5,10,5" Background="#41444b" Visibility="Collapsed"/>
-        </StackPanel>
+        <ScrollViewer>
+            <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33" CanVerticallyScroll="True" Name="stackpanel">
+                <TextBlock Foreground="White" FontSize="15" Name="receiveMessage" Margin="10,5,300,5" Background="#41444b" Visibility="Collapsed" TextWrapping="Wrap"/>
+                <TextBlock Foreground="White" FontSize="15" Name="sentMessage" Margin="300,5,10,5" Background="#41444b" Visibility="Collapsed"/>
+            </StackPanel>
+        </ScrollViewer>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
