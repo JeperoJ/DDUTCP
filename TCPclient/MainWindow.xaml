@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TCPclient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="792" Width="1280">
+        Title="MainWindow" Height="792" Width="1280" Icon=".\Ressources\spudo.ico">
     <Grid Background="#23272a">
         <!--#region Top -->
         <Grid.RowDefinitions>

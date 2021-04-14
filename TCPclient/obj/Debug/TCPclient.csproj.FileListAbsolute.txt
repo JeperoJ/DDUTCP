@@ -27,3 +27,18 @@ D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug
 D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.csproj.CoreCompileInputs.cache
 D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.exe
 D:\Brugere\Jeppe\Skrivebord\Projects\Skarp c\DDU Shit\TCPwUI\TCPclient\obj\Debug\TCPclient.pdb
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\bin\Debug\TCPclient.exe.config
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\bin\Debug\TCPclient.exe
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\bin\Debug\TCPclient.pdb
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.csprojAssemblyReference.cache
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\MainWindow.g.cs
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\App.g.cs
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient_MarkupCompile.cache
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient_MarkupCompile.lref
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\MainWindow.baml
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.g.resources
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.Properties.Resources.resources
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.csproj.GenerateResource.cache
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.csproj.CoreCompileInputs.cache
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.exe
+C:\Users\ejer\Documents\koderod\DDU Chatsystem\TCPclient\obj\Debug\TCPclient.pdb

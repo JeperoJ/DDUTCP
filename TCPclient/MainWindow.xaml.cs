@@ -26,10 +26,7 @@ namespace TCPclient
         public MainWindow()
         {
             InitializeComponent();
-
-            
-            
-
+            this.Title = "Client Connect";
             /*try
             {
                 
@@ -58,18 +55,25 @@ namespace TCPclient
                 thr = new Thread(new ThreadStart(Receive)); //Binder receive funktionen til threaden
                 thr.Start(); //Starter threaden
 
-
-            }
-            catch //(SocketException excep)
-            {
-                //new ToastContentBuilder().AddArgument("action", "viewConversation").AddArgument("conversationId", 9813).AddText(Convert.ToString(excep)).Show();
-
-            }
-            finally
-            {
-                //Skifter knappen der forbandt til en knap der kan lukke forbindelsem
+                //Skifter knappen der forbandt til en knap der kan lukke forbindelsen
                 connect.Content = "Disconnect";
                 connect.Click += Disconnect;
+
+            }
+            catch (FormatException ex) //Fanger format fejl for input
+            {
+                MessageBox.Show("Forkert Inputformat. Check: Er IP i rigtigt format (punktum de rigtige steder) er port indtastet består kun af 4 tal?\n\nError msg:\n" + ex);
+            }
+            catch (SocketException ex)
+            {
+                MessageBox.Show("Kunne ikke forbinde til server. Kontrollér at rigtig IP og port er indtastet og at serveren er åben\n\nErrormsg:\n" + ex);
+                //Hvis brugeren allerede er forbundet og forsøger at disconnecte, vil denne exception poppe op, hvilket vil sige at knappen ikke skifter ordentligt til disconnect.
+            }
+            catch (Exception ex) //Fanger generelle, uforudsete fejl
+            {
+                MessageBox.Show(ex.Message + "\n" + ex);
+                //new ToastContentBuilder().AddArgument("action", "viewConversation").AddArgument("conversationId", 9813).AddText(Convert.ToString(excep)).Show();
+
             }
         }
 
@@ -124,8 +128,14 @@ namespace TCPclient
                 String responseData = String.Empty;
 
                 // Read the first batch of the TcpServer response bytes.
-                int bytes = stream.Read(data, 0, data.Length);
-                responseData = Encoding.UTF8.GetString(data, 0, bytes);
+                try
+                {
+                    int bytes = stream.Read(data, 0, data.Length);
+                    responseData = Encoding.UTF8.GetString(data, 0, bytes);
+                }
+                catch (System.IO.IOException ex) { MessageBox.Show("Blocking operation blev afbrudt af et WSACancelBlocking Call\n\nError msg:\n" + ex); }
+                catch (System.ObjectDisposedException ex) { MessageBox.Show("Det bliver forsøgt at skrive til en lukket stream\n\nError msg:\n" + ex); }
+                catch (Exception ex) {MessageBox.Show("Ikke forberedet på exception: " + ex.Message + "\n\nError msg:\n" + ex); }
                 Dispatcher.Invoke(new Action(() => { stackpanel.Children.Add(new TextBlock { Foreground = receiveMessage.Foreground, FontSize = receiveMessage.FontSize, Margin = receiveMessage.Margin, Background = receiveMessage.Background, TextWrapping = receiveMessage.TextWrapping, Text = responseData }); }));
                 //mre.WaitOne();
             }
