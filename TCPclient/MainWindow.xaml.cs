@@ -41,7 +41,9 @@ namespace TCPclient
         //Definerer variabler der skal være globale
         private static TcpClient client = new TcpClient(); //Klienten der håndterer at oprette forbindelse
         private static NetworkStream stream; //Streamen hvor informationen er
-        private static Thread thr; //Threaden hvor receive er
+        //private static Thread thr; //Threaden hvor receive er
+        private static Boolean open;
+        private static CancellationTokenSource source;
         //private static ManualResetEvent mre = new ManualResetEvent(false); //Event til at stoppe receive funktionen
 
         void Connection(object sender, RoutedEventArgs e)
@@ -52,10 +54,14 @@ namespace TCPclient
                 // Get a client stream for reading and writing.
                 //  Stream stream = client.GetStream();
                 stream = client.GetStream(); //Får streamen fra den forbunde IP
-                thr = new Thread(new ThreadStart(Receive)); //Binder receive funktionen til threaden
+                source = new CancellationTokenSource();
+                open = true;
+                Thread thr = new Thread(new ThreadStart(Receive)); //Binder receive funktionen til threaden
                 thr.Start(); //Starter threaden
 
-                
+                connect.Content = "Disconnect";
+                connect.Click -= Connection;
+                connect.Click += Disconnect;
 
             }
             catch (FormatException ex) //Fanger format fejl for input
@@ -73,12 +79,7 @@ namespace TCPclient
                 //new ToastContentBuilder().AddArgument("action", "viewConversation").AddArgument("conversationId", 9813).AddText(Convert.ToString(excep)).Show();
 
             }
-            finally
-            {
-                //Skifter knappen der forbandt til en knap der kan lukke forbindelsen
-                connect.Content = "Disconnect";
-                connect.Click += Disconnect;
-            }
+            
         }
 
         void Disconnect(object sender, RoutedEventArgs e)
@@ -86,9 +87,13 @@ namespace TCPclient
             try
             {
                 //thr.Abort();
-                //thr.Join();
+                open = false;
+                source.Cancel();
                 stream.Close(); //Lukker for informationen
                 client.Close(); //Lukker for klienten
+                stream.Dispose();
+                client.Dispose();
+                source.Dispose();
             }
             catch //(SocketException excep)
             {
@@ -120,7 +125,8 @@ namespace TCPclient
 
         void Receive()
         {
-            while (true)
+            CancellationToken token = source.Token;
+            while (!token.IsCancellationRequested)
             {
                 //MainWindow window = new MainWindow();
                 // Receive the TcpServer.response.
@@ -134,11 +140,11 @@ namespace TCPclient
                 // Read the first batch of the TcpServer response bytes.
                 try
                 {
-                    int bytes = stream.Read(data, 0, data.Length);
-                    responseData = Encoding.UTF8.GetString(data, 0, bytes);
+                    Task<int> bytes = stream.ReadAsync(data, 0, data.Length, token);
+                    responseData = Encoding.UTF8.GetString(data, 0, bytes.Result);
                 }
                 catch (System.IO.IOException ex) { MessageBox.Show("Blocking operation blev afbrudt af et WSACancelBlocking Call\n\nError msg:\n" + ex); }
-                catch (System.ObjectDisposedException ex) { MessageBox.Show("Det bliver forsøgt at skrive til en lukket stream\n\nError msg:\n" + ex); }
+                catch (ObjectDisposedException ex) { MessageBox.Show("Det bliver forsøgt at skrive til en lukket stream\n\nError msg:\n" + ex); }
                 catch (Exception ex) {MessageBox.Show("Ikke forberedet på exception: " + ex.Message + "\n\nError msg:\n" + ex); }
                 Dispatcher.Invoke(new Action(() => { stackpanel.Children.Add(new TextBlock { Foreground = receiveMessage.Foreground, FontSize = receiveMessage.FontSize, Margin = receiveMessage.Margin, Background = receiveMessage.Background, TextWrapping = receiveMessage.TextWrapping, Text = responseData }); }));
                 //mre.WaitOne();
