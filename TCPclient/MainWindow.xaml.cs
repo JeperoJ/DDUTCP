@@ -55,9 +55,7 @@ namespace TCPclient
                 thr = new Thread(new ThreadStart(Receive)); //Binder receive funktionen til threaden
                 thr.Start(); //Starter threaden
 
-                //Skifter knappen der forbandt til en knap der kan lukke forbindelsen
-                connect.Content = "Disconnect";
-                connect.Click += Disconnect;
+                
 
             }
             catch (FormatException ex) //Fanger format fejl for input
@@ -74,6 +72,12 @@ namespace TCPclient
                 MessageBox.Show(ex.Message + "\n" + ex);
                 //new ToastContentBuilder().AddArgument("action", "viewConversation").AddArgument("conversationId", 9813).AddText(Convert.ToString(excep)).Show();
 
+            }
+            finally
+            {
+                //Skifter knappen der forbandt til en knap der kan lukke forbindelsen
+                connect.Content = "Disconnect";
+                connect.Click += Disconnect;
             }
         }
 

@@ -5,16 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TCPclient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="792" Width="1280" Icon=".\Ressources\spudo.ico">
+        Title="MainWindow" Height="720" Width="1280" Icon=".\Ressources\spudo.ico">
     <Grid Background="#23272a">
         <!--#region Top -->
         <Grid.RowDefinitions>
             <RowDefinition Height="17*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="3" Background="White" Content="CLIENT" Foreground="Black" FontSize="50" FontWeight="ExtraBold" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
         <!--#endregion-->
         <ScrollViewer>
             <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33" CanVerticallyScroll="True" Name="stackpanel">
