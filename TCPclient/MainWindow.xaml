@@ -16,8 +16,8 @@
         <!--#endregion-->
         <ScrollViewer>
             <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#2c2f33" CanVerticallyScroll="True" Name="stackpanel">
-                <TextBlock Foreground="White" FontSize="15" Name="receiveMessage" Margin="10,5,300,5" Background="#41444b" Visibility="Collapsed" TextWrapping="Wrap"/>
-                <TextBlock Foreground="White" FontSize="15" Name="sentMessage" Margin="300,5,10,5" Background="#41444b" Visibility="Collapsed"/>
+                <TextBlock Foreground="White" FontSize="15" Name="receiveMessage" Margin="10,5,300,5" Background="#41444b" Visibility="Collapsed" TextWrapping="Wrap" />
+                <TextBlock Foreground="White" FontSize="15" Name="sentMessage" Margin="300,5,10,5" Background="#41444b" Visibility="Collapsed" TextWrapping="Wrap"/>
             </StackPanel>
         </ScrollViewer>
 
